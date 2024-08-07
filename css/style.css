@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+JP|Josefin+Sans");
+/* Font Faces */
+@font-face {
+  font-family: "Aihara";
+  src: url("../fonts/Aiharahudemojikaisho_free305.ttf") format("truetype");
+}
+/* ベーススタイル */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ハンバーガーメニュー */
+.hamburger-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.hamburger-menu span {
+  background: #333;
+  height: 4px;
+  border-radius: 2px;
+}
+
+#fullScreenMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 900;
+  transition: opacity 0.3s;
+}
+
+#fullScreenMenu.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#fullScreenMenu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#fullScreenMenu ul li {
+  margin: 20px 0;
+}
+
+#fullScreenMenu ul li a {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+/* パララックス背景とセクション */
+.parallax {
+  background-image: url("background.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  padding: 60px 20px;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.text-box {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+.text-box.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* セクションの背景 */
+#synopsis-section, #info-section, #cast-section, #flyer-section, #sns-section {
+  background: #f7f7f7;
+}
+
+#title-section {
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+  }
+  #fullScreenMenu ul li {
+    margin: 15px 0;
+  }
+  #fullScreenMenu ul li a {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
