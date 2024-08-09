@@ -1,9 +1,24 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "KTEGAKI";
+  src: url("../fonts/KTEGAKI.ttf") format("truetype");
+}
+@font-face {
+  font-family: "RiiTN_R";
+  src: url("../fonts/RiiTN_R.otf") format("opentype");
+}
+/*
+.noto-serif-jp-fonts {
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 10;
+    font-style: normal;
+}*/
 /* ベーススタイル */
 body, html {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Noto Serif JP", Arial, sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -90,7 +105,6 @@ body, html {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
   color: white;
 }
 
@@ -107,7 +121,7 @@ body, html {
 
 .parallax .content {
   position: relative;
-  width: 40%;
+  width: 80%;
   z-index: 2;
   text-align: center;
 }
@@ -119,16 +133,32 @@ body, html {
   color: white; /* 白文字を設定 */
 }
 
+.parallax .row img {
+  position: absolute;
+  width: 50vmin;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+.parallax h2 {
+  font-size: 4vmin;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .parallax h1 {
   writing-mode: vertical-rl;
-  font-size: 5.5rem;
+  font-family: "RiiTN_R";
+  font-size: 10vmin;
   margin-right: auto;
   margin-left: auto;
 }
 
 .parallax p {
   writing-mode: vertical-rl;
-  font-size: 2rem;
+  font-size: 3vmin;
   margin-right: auto;
   margin-left: auto;
 }
