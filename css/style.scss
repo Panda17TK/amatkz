@@ -109,11 +109,12 @@ body, html {
     height: 100vh;
     overflow: hidden;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     color: white;
 }
 
-.parallax img {
+.parallax .back img {
     position: absolute;
     top: 0;
     left: 0;
@@ -130,6 +131,13 @@ body, html {
     text-align: center;
 }
 
+.parallax .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
 .parallax h1,
 .parallax h2,
 .parallax p {
@@ -137,10 +145,10 @@ body, html {
     color: white; /* 白文字を設定 */
 }
 
-.parallax .row img {
-    position: absolute;
+.parallax .content img {
     width: 50vmin;
     height: auto;
+    opacity: 0;
     margin-left: auto;
     margin-right: auto;
     z-index: 1;
