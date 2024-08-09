@@ -1,6 +1,32 @@
 document.addEventListener('DOMContentLoaded', function() {
     const hamburgerMenu = document.getElementById('hamburgerMenu');
     const fullScreenMenu = document.getElementById('fullScreenMenu');
+    const textBoxes = document.querySelectorAll('.text-box');
+
+    // ページロード時にハンバーガーメニューをフェードイン
+    setTimeout(() => {
+        hamburgerMenu.classList.add('visible');
+    }, 100); // 0.1秒の遅延でフェードイン開始
+
+    hamburgerMenu.addEventListener('click', function() {
+        fullScreenMenu.classList.toggle('hidden');
+    });
+
+    window.addEventListener('scroll', function() {
+        textBoxes.forEach(box => {
+            const boxPosition = box.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (boxPosition < windowHeight - 100) {
+                box.classList.add('visible');
+            }
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerMenu = document.getElementById('hamburgerMenu');
+    const fullScreenMenu = document.getElementById('fullScreenMenu');
     const menuItems = fullScreenMenu.querySelectorAll('a');
     const textBoxes = document.querySelectorAll('.text-box');
 
@@ -16,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    /*
     // スクロール時のテキストボックスアニメーション
     window.addEventListener('scroll', function() {
         textBoxes.forEach(box => {
@@ -26,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 box.classList.add('visible');
             }
         });
-    });
+    });*/
 
     // スクロール時にセクションごとにハンバーガーアイコンの色を変更
     window.addEventListener('scroll', function() {
