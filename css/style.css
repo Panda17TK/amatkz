@@ -226,6 +226,26 @@ section {
   transform: translateY(0);
 }
 
+#synopsis-section {
+  text-align: center;
+}
+
+#synopsis-section p {
+  font-size: 1.2rem;
+}
+
+.poster-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.poster-img .row {
+  width: 70vw;
+  height: auto;
+}
+
 /* ハンバーガーアイコンの色変更 */
 #title-section .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -299,6 +319,8 @@ section {
 
 #flyer-modal img {
   display: block;
+  width: 50vw;
+  height: auto;
   max-width: 90%;
   max-height: 90%;
   margin: auto;
@@ -311,71 +333,78 @@ section {
   display: block; /* クリックで表示 */
 }
 
-/* ボタン全体の外枠指定 */
-.snsbtniti {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  max-width: 350px; /* ボタンを設置する場所の最大横幅 */
-  margin: 0 auto; /* ボタンを中央へ */
-}
-
-/* ulタグの内側余白なしと箇条書きの黒丸削除 */
-ul.snsbtniti {
-  padding: 0 !important;
-  list-style-type: none !important;
-}
-
-/* ボタン同士の余白調整 */
-.snsbtniti li {
-  flex: 0 0 33%; /* ボタンを3つ並びへ */
-  text-align: center !important;
-}
-
 /* ボタン全体 */
-.flowbtn {
+.flowbtn2 {
   font-family: "Noto Sans Japaneses", sans-serif; /* フォント指定 */
   position: relative;
   display: inline-block;
   width: 75px; /* 背景横幅 */
   height: 65px; /* 背景高さ */
-  font-size: 30px; /* アイコンサイズ */
+  font-size: 30px;
   border-radius: 4px;
-  color: #fff !important; /* ボタン内カラー */
   transition: 0.5s;
   text-decoration: none;
-  box-shadow: 0 1px 2px #999;
-  margin-bottom: 10px; /* ボタン下余白 */
+  text-align: center;
+  margin-bottom: 10px; /* ボタン下の余白 */
 }
 
 /* アイコンの位置を少し下げる */
-.flowbtn i {
+.flowbtn2 i {
   position: relative;
   top: 5px;
 }
 
 /* ボタン内テキスト調整 */
-.flowbtn div {
+.flowbtn2 div {
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 0;
 }
 
-/* ボタンマウスホバー時少し浮き上がる */
-.flowbtn:hover {
-  transform: translateY(-5px);
+/* マウスホバー時、ボタン内を白に指定 */
+.flowbtn2:hover {
   text-decoration: none;
   cursor: pointer;
+  color: #fff;
+}
+
+.sns-sect {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.sns-sect row {
+  width: 80vw;
 }
 
 /* インスタ・Amazonのアイコンを少し大きく */
-.flowbtn i.fa-brands.fa-instagram, .flowbtn i.fa-brands.fa-amazon {
+.flowbtn2 i.fa-brands.fa-instagram, .flowbtn2 i.fa-brands.fa-amazon {
   font-size: 35px;
 }
 
-/* エックス背景 */
-.my_x1 {
-  background: #000;
+/* エックス枠線 */
+.my_x2 {
+  border: solid 1px #000;
+  color: #000;
+}
+
+/* エックスマウスホバー時 */
+.my_x2:hover {
+  border: solid 1px #000;
+  background-color: #000;
+}
+
+/* Instagram枠線 */
+.my_instagram2 {
+  border: solid 1px #c6529a;
+  color: #c6529a;
+}
+
+/* Instagramマウスホバー時 */
+.my_instagram2:hover {
+  border: solid 1px #c6529a;
+  background: linear-gradient(45deg, rgb(254, 212, 117) 0%, rgb(229, 61, 93) 50%, rgb(194, 49, 134) 70%, rgb(156, 56, 187) 100%);
 }
 
 /* レスポンシブデザイン */
