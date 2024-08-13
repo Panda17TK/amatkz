@@ -238,8 +238,12 @@ section {
     text-align: center;
 }
 
+#synopsis-section h2 {
+    font-size: clamp(20px, 4.5vw, 40px);
+}
+
 #synopsis-section p {
-    font-size: 1.2rem;
+    font-size: clamp(10px, 2.5vw, 30px);
 }
 
 .poster-img {
@@ -299,17 +303,34 @@ section {
 .cast {
     text-align: center;
 }
+.cast h2 {
+    text-align: center;
+    font-size: clamp(25px, 3.125vw, 40px);
+}
 
 .cast ul {
     list-style: none;
+}
+
+.cast ul li {
+    font-size: clamp(20px, 2vw, 30px);
 }
 
 .staff {
     text-align: center;
 }
 
+.staff h2 {
+    text-align: center;
+    font-size: clamp(25px, 3.125vw, 40px);
+}
+
 .staff ul {
     list-style: none;
+}
+
+.staff ul li {
+    font-size: clamp(20px, 2vw, 30px);
 }
 
 /* フォトフレームのスタイル */
