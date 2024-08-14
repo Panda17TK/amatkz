@@ -247,7 +247,7 @@ section {
 }
 
 #synopsis-section p {
-    font-size: clamp(10px, 2.2vw, 30px);
+    font-size: clamp(15px, 2.2vw, 30px);
 }
 
 .poster-img {
@@ -461,6 +461,38 @@ section {
     .my_instagram2:hover {
     border: solid 1px #c6529a;
     background: linear-gradient(45deg, rgba(254,212,117,1) 0%,rgba(229,61,93,1) 50%,rgba(194,49,134,1) 70%,rgba(156,56,187,1) 100%);
+    }
+
+    .footer {
+        padding: 20px; /* py-3 で既にパディングが設定されているので、これを削除することも可能 */
+        text-align: center;
+        color: #fff;
+    }
+    
+    .social-icons {
+        display: inline-flex;
+        gap: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .social-icons a {
+        text-decoration: none;
+    }
+    
+    .social-icons img {
+        width: 30px;
+        height: 30px;
+        filter: invert(100%); /* 白いアイコンにしたい場合 */
+        transition: transform 0.3s ease;
+    }
+    
+    .social-icons img:hover {
+        transform: scale(1.1);
+    }
+    
+    .copyright {
+        margin-top: 10px;
+        font-size: 14px;
     }
 
 
