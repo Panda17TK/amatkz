@@ -98,6 +98,10 @@ body, html {
   transform-origin: left;
 }
 
+.arasuzi p span {
+  display: inline-block;
+}
+
 /* パララックス背景とセクション */
 .parallax {
   position: relative;
@@ -231,11 +235,11 @@ section {
 }
 
 #synopsis-section h2 {
-  font-size: clamp(20px, 4.5vw, 40px);
+  font-size: clamp(20px, 4vw, 40px);
 }
 
 #synopsis-section p {
-  font-size: clamp(10px, 2.5vw, 30px);
+  font-size: clamp(10px, 2.2vw, 30px);
 }
 
 .poster-img {
@@ -261,6 +265,21 @@ section {
 
 #info-section .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='red' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#info-section p {
+  text-align: center;
+  font-size: 10px, 2vw, 40px;
+}
+
+#info-section h2 {
+  text-align: center;
+  font-size: champ(20px, 3.5vw, 40px);
+}
+
+#info-section h4 {
+  text-align: center;
+  font-size: champ(20px, 3.5vw, 40px);
 }
 
 .about {
