@@ -322,6 +322,9 @@ section {
 
 .cast ul {
   list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .cast ul li {
@@ -339,6 +342,9 @@ section {
 
 .staff ul {
   list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .staff ul li {
@@ -411,7 +417,6 @@ section {
 .flowbtn2 div {
   font-size: 12px;
   font-weight: bold;
-  letter-spacing: 0;
 }
 
 /* マウスホバー時、ボタン内を白に指定 */
