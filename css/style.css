@@ -497,6 +497,30 @@ section {
   font-size: 14px;
 }
 
+.poster-image {
+  max-width: 100%;
+  max-height: 80vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.poster-image:hover {
+  transform: scale(1.05);
+}
+
+.modal-dialog-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.modal-content {
+  background: transparent;
+  border: none;
+}
+
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
   .navbar-nav .nav-link {

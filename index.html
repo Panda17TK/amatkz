@@ -30,7 +30,7 @@
             <li><a href="#synopsis-section">あらすじ</a></li>
             <li><a href="#info-section">公演情報</a></li>
             <li><a href="#cast-section">キャスト＆スタッフ</a></li>
-            <li><a href="#flyer-section">ポスター</a></li>
+            <li><a href="#poster-section">ポスター</a></li>
         </ul>
     </div>
 
@@ -120,24 +120,21 @@
         </div>
     </section>
 
-    <section id="flyer-section" class="container poster-img">
-        <div class="row">
-            <div class="col-12 text-center text-box">
-                <h2>ポスター</h2>
-                <h2>&nbsp;</h2>
-                <a href="#flyer-modal">
-                    <img src="img/poster.png" alt="ビラ" class="img-fluid">
-                </a>
+    <section id="poster-section" class="container">
+        <h1 class="text-center">ポスター</h1>
+        <div class="container d-flex justify-content-center align-items-center vh-100">
+            <img src="img/poster.png" class="poster-image" alt="ポスター画像" data-bs-toggle="modal" data-bs-target="#imageModal">
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="img/poster.png" class="img-fluid" alt="拡大ポスター画像">
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- モーダルウィンドウの追加 -->
-    <div id="flyer-modal">
-        <a href="#flyer-section">
-            <img src="img/poster.png" alt="ビラ">
-        </a>
-    </div>
 
     <footer class="footer bg-dark text-white text-center py-3">
         <div class="social-icons">
@@ -153,6 +150,8 @@
     <!-- Bootstrap 5 JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
