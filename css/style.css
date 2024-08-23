@@ -489,7 +489,7 @@ section {
 .poster-card {
   perspective: 1000px;
   width: 70vw; /* Width is relative to the viewport */
-  max-width: 600px; /* Prevents the card from becoming too large */
+  max-width: 500px; /* Prevents the card from becoming too large */
   aspect-ratio: 2893/4092; /* Maintain the card's aspect ratio */
   position: relative;
 }
