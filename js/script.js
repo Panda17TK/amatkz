@@ -51,3 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.querySelector('.poster-card').addEventListener('click', function() {
+    this.classList.toggle('flipped');
+});
