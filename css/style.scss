@@ -321,6 +321,7 @@ section {
 
 .cast {
     text-align: center;
+    margin-bottom: 40px;
 }
 .cast h2 {
     text-align: center;
@@ -335,7 +336,7 @@ section {
 }
 
 .cast ul li {
-    font-size: clamp(20px, 2vw, 30px);
+    font-size: clamp(20px, 1.8vw, 30px);
 }
 
 .staff {
@@ -355,7 +356,7 @@ section {
 }
 
 .staff ul li {
-    font-size: clamp(20px, 2vw, 30px);
+    font-size: clamp(20px, 1.8vw, 30px);
 }
 
 /* フォトフレームのスタイル */
