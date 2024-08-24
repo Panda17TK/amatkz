@@ -292,11 +292,17 @@ section {
 .husen_img1 img {
   width: 50%;
   height: auto;
+  border: 10px solid #fff; /* 白いフレーム */
+  border-radius: 0.75em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 影 */
 }
 
 .husen_img2 img {
   width: 80%;
   height: auto;
+  border: 10px solid #fff; /* 白いフレーム */
+  border-radius: 0.75em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 影 */
 }
 
 .cast {
